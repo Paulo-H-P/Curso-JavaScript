@@ -1,3 +1,3 @@
-let num = 10;
+let num = 10 + 10;
 
 console.log(num);
