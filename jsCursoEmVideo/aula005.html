@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trabalhando com html,Css e Js</title>
+
+    <style>
+      body {
+        background-color: rebeccapurple;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>INICIANDO ESTUDO DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usa o <strong>DOM</strong> em javaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+      /* o comando abaixo puxa a primeira tag P o numero 0 significa vai puxar a primeira tag*/
+      let p1 = document.getElementsByTagName('p')[1];
+      //document.write(p1.innerText);puxa a variavel p1 que contem o texto do primeiro paragafo do html
+
+      //ao inves de usar inner.text sempre usar inner.html para puzar todas as propriedades
+      document.write(p1.innerHTML);
+
+      //usando o id
+      /* let d = document.getElementById('msg');
+      d.style.background = 'lightgray'; //é possivel manipular o css pelo js*/
+
+      //usando o querySelector
+      let d = document.querySelector('div#msg'); //acessa direto o id ou class
+      d.style.background = 'black';
+    </script>
+  </body>
+</html>
