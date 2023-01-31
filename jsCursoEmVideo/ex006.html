@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos Dom</title>
+
+    <style>
+      #area {
+        font: normal 20px arial;
+        color: white;
+        background-color: blueviolet;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- abaixo é configurado a id e a função clicar que vai ser chamada no js
+    <div id="area" onclick="clicar()">Interaja...</div>-->
+
+    <!--usando mais de uma função -->
+    <div
+      id="area"
+      onclick="clicar()"
+      onmouseenter="entrar()"
+      onmouseout="sair()"
+    >
+      Interaja...
+    </div>
+
+    <script>
+      /*função criada para alterar a emnsagem interaja do html para clicou executada pelo
+      js
+      function clicar() {
+        let a = document.getElementById('area');
+        a.innerHTML = 'Clicou';
+      }*/
+
+      /*fazendo com mais de uma função*/
+      let a = document.getElementById('area');
+      function clicar() {
+        a.innerHTML = 'Clicou';
+        a.style.background = 'red';
+      }
+
+      function entrar() {
+        a.innerHTML = 'entrou';
+      }
+
+      function sair() {
+        a.innerHTML = 'saiu';
+        a.style.background = 'blueviolet';
+      }
+    </script>
+  </body>
+</html>
