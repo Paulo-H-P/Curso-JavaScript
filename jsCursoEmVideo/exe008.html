@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font: normal 12pt arial;
+        background-color: teal;
+      }
+      h1 {
+        text-shadow: 1px 10px 3px 10px rgba(0, 0, 0, 0.612);
+      }
+
+      input {
+        width: 60px;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.612);
+      }
+
+      #pais {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Qual a Sua Nacionalidade?</h1>
+    <h2>
+      Digete o Pais de Origem. <input type="text" name="pais" id="pais" />
+      <input type="botton" value="Confirmar" onclick="naci()" id="botao" />
+      <div id="resposta"></div>
+
+      <script>
+        function naci() {
+          let nac = document.querySelector('input#pais');
+          let resp = document.querySelector('div#resposta');
+          let result = pais.value;
+          resp.innerHTML += `<p> Seu Pais é <strong> ${result} </strong</p>`;
+
+          if (result != 'brasil') {
+            resp.innerHTML += '<p>Você é Estrangeiro</p>';
+          } else {
+            resp.innerHTML += '<p>Você é Brasileiro</p>';
+          }
+        }
+      </script>
+    </h2>
+  </body>
+</html>
