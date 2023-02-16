@@ -7,14 +7,18 @@
     <title>Hora do Dia</title>
     <link rel="stylesheet" href="estilo.css" />
   </head>
-  <body onload="carregar()">
+  <body>
     <header>
-      <h1>Hora dia</h1>
+      <h1>Tabuada</h1>
     </header>
     <section>
-      <div id="msg">imagem</div>
-      <div id="foto">
-        <img id="imagem" src="./imagens/manha250.png" alt="Manha" />
+      <div>
+        <p>
+          Numero:
+          <input type="Number" name="num" id="num" />
+          <input type="button" value="Gerar Tabuada" onclick="clicar()" />
+        </p>
+        <div id="res">resultado</div>
       </div>
     </section>
 
