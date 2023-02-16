@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(58, 132, 244);
+  font: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+header {
+}
+
+section {
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  border-radius: 3%;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.532);
+  margin: auto;
+}
+
+#dados {
+  padding-top: 3%;
+}
+
+p {
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 5px;
+  padding-top: 3%;
+}
+
+#botao {
+  padding-top: 3%;
+}
+
+#rodape {
+  text-align: center;
+  padding: 5px;
+}

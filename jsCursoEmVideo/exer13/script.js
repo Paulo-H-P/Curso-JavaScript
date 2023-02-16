@@ -1,6 +1,6 @@
 function verificar() {
   let data = new Date();
-  let ano = data.getFullYear(); //data com 4 digitos
+  let ano = data.getFullYear(); //ano com 4 digitos
   let fano = document.getElementById('txtano');
   let res = document.querySelector('div#res');
 
