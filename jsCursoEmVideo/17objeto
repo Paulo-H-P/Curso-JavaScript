@@ -1,0 +1,12 @@
+let amigo = {
+  nome: 'josé',
+  peso: 85.4,
+  engordar(p = 0) {
+    console.log('engordou');
+    this.peso += p;
+  },
+};
+
+amigo engordar(2) // vai aumentar o valor do peso na função engordar
+console.log(amigo);
+//console.log(amigo.nome); mostra o objeto especifico

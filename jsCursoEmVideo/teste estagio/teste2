@@ -1,0 +1,29 @@
+let num = '10';
+let ant = 0;
+let atual = 1;
+proximo = '1';
+
+//função criada com auxilio do chat gpt pois estava com dificuldade para montar a formula de binet
+/*function notFibonacci(n) {
+  const x = 5 * Math.pow(n, 2) + 4;
+  const y = 5 * Math.pow(n, 2) + 4;
+  const raizX = Math.sqrt(x);
+  const raizY = Math.sqrt(y);
+
+  return raizX % 1 !== 0 && raizY % 1 !== 0;
+}
+
+console.log(notFibonacci(num));*/
+
+console.log(`${ant}`);
+for (let cont = 1; cont <= num; cont++) {
+  console.log(`${proximo}`);
+  proximo = ant + atual;
+  ant = atual;
+  atual = proximo;
+}
+if (proximo === num) {
+  console.log(` é fibonacci`);
+} else {
+  console.log(`ok`);
+}
