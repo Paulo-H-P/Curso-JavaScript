@@ -13,7 +13,7 @@ let nascimento = anoAtual - idade;
 console.log(nome, 'Seu ano de nascimento foi', nascimento, 'seu imc é', imc);
 
 //usando o template string
-//toFixed(numero) defini a quantidade de casas decimais
+//toFixed(numero) define a quantidade de casas decimais
 
 console.log(
   `${nome} Seu ano de ${nascimento} foi ${nascimento} seu imc é ${imc.toFixed(
