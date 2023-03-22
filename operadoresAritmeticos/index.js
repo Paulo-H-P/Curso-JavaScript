@@ -31,7 +31,7 @@ console.log(num05);*/
 //incremento com muliplos ou outros
 
 let cont = 0;
-cont += 2; // é igual a cont = cont + 2
+cont += 2; // este comando é o mesmo que cont = cont + 2
 cont += 2;
 cont += 2;
 console.log(cont); // resultado 6
@@ -40,5 +40,19 @@ console.log(cont); // resultado 6
 
 const teste01 = parseInt('5');
 const teste02 = 10;
+
+console.log(teste01 + teste02);
+
+// para converter um numero uma string em um numero real usar o float
+
+const teste03 = parsefloat('5,5');
+const teste04 = 10;
+
+console.log(teste03 + teste04);
+
+// usar o Number pois ele pode ser usado tanto para inteiro como real
+
+const teste08 = Number('5');
+const teste09 = 10;
 
 console.log(teste01 + teste02);

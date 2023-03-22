@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercicios com string ,escrevendo no js e aparecendo no html</title>
+  </head>
+  <body>
+    <script>
+      const nome = prompt('digite seu nome');
+
+      document.body.innerHTML += `Seu nome é ${nome} <br/>`; /*faz com que o que foi escrito no prompt
+      apareça escrito no navegador*/
+
+      document.body.innerHTML += `O seu nome tem ${nome.length}letras <br/>`; //quantidade de letras
+
+      document.body.innerHTML += `A segunda letra do seu nome é ${nome[2]} `; //exibe a posição da letra
+
+      document.body.innerHTML += `Qual o primeiro indice da letra no seu nome?`;
+    </script>
+  </body>
+</html>
